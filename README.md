@@ -10,3 +10,4 @@ cd build
 cmake ..
 make install
 ```
+standalone apps can be run directly ```./HelloWorld```, Houdini plugins need to be manually put into one of plugin paths, e.g. ```~/houdini16.0/dso```
