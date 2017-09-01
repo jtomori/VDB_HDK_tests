@@ -1,5 +1,5 @@
-VDB_tests - playing around and learning c++ and OpenVDB
-=======================================================
+VDB_HDK_tests - playing around and learning
+===========================================
 
 Setup
 -----
