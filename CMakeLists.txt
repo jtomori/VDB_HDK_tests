@@ -17,3 +17,9 @@ set_target_properties( HelloWorld PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE )
 target_link_libraries( HelloWorld ${PROJECT_LINK_LIBS} )
 install( TARGETS HelloWorld DESTINATION ${CMAKE_SOURCE_DIR}/bin )
 
+#Create SDF Sphere
+add_executable( CreateSDFSphere src/create_sdf_sphere.cpp )
+set_target_properties( CreateSDFSphere PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE )
+target_link_libraries( CreateSDFSphere ${PROJECT_LINK_LIBS} )
+install( TARGETS CreateSDFSphere DESTINATION ${CMAKE_SOURCE_DIR}/bin )
+
