@@ -48,3 +48,11 @@ set_target_properties( SopEmptyNode PROPERTIES COMPILE_FLAGS "${HDK_COMPILE_FLAG
 set_target_properties( SopEmptyNode PROPERTIES LINK_FLAGS "${HDK_LINK_FLAGS}")
 target_link_libraries( SopEmptyNode ${PROJECT_LINK_LIBS} )
 install( TARGETS SopEmptyNode DESTINATION ${CMAKE_SOURCE_DIR}/bin )
+
+#SOP Empty Node Ostap (plugin)
+add_library( SopEmptyNodeOstap SHARED src/sop_empty_node_ostap.cpp )
+set_target_properties( SopEmptyNodeOstap PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE )
+set_target_properties( SopEmptyNodeOstap PROPERTIES COMPILE_FLAGS "${HDK_COMPILE_FLAGS_PLUGIN}")
+set_target_properties( SopEmptyNodeOstap PROPERTIES LINK_FLAGS "${HDK_LINK_FLAGS}")
+target_link_libraries( SopEmptyNodeOstap ${PROJECT_LINK_LIBS} )
+install( TARGETS SopEmptyNodeOstap DESTINATION ${CMAKE_SOURCE_DIR}/bin )

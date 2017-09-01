@@ -36,7 +36,7 @@
 #include <OP/OP_Operator.h>
 #include <OP/OP_OperatorTable.h>
 
-#include "sopEmptyNode.h"
+#include "sop_empty_node.h"
 
 using namespace HDK_Sample;
 
